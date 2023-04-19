@@ -294,9 +294,10 @@ header {
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
+    row-gap: 146px;
 }
-/* content-1 */
-.about--heading {
+/* content-top */
+.about-heading {
     margin-top: 15px;
 }
 
@@ -337,5 +338,221 @@ header {
 .check-item::after {
     position: absolute;
     content: url(../img/checked.svg);
-    left: 3px;
+    left: 4px;
+}
+
+/* media-top */
+.about-media {
+    position: relative;
+    padding-left: 92px;
+    width: 494px;
+}
+
+.about__img-wrap {
+    position: relative;
+    width: inherit;
+    display: flex;
+}
+
+.about__img-wrap::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    content: "";
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    border-radius: 16px;
+    z-index: -1;
+}
+
+.about-decor {
+    position: absolute;
+    right: -50px;
+    bottom: 358px;
+    z-index: -1;
+}
+
+.about-img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-card {
+    position: absolute;
+    bottom: 238px;
+    left: 0;
+    padding: 30px 26px;
+    width: 136px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px rgba(85, 240, 255, 0.17);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.about-card::before {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    content: url(../img/about-decor-1.svg);
+}
+
+.about-card__number {
+    font-family: "Sora";
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 42px;
+    color: #ffffff;
+}
+
+.about-card__desc {
+    display: inline-block;
+    margin-top: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.43;
+    color: #c6f4f9;
+}
+
+/* about-media-bot */
+.about-media-bot {
+    padding: 0;
+    width: 458px;
+}
+
+.about__img-wrap-bot::after {
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+    border: 2px solid #ffffff;
+    height: 100%;
+}
+
+.about-decor-bot:nth-child(1) {
+    position: absolute;
+    top: 12px;
+    right: 63px;
+}
+
+.about-decor-bot:nth-child(2) {
+    position: absolute;
+    top: -16px;
+    right: 13px;
+}
+
+.about-decor-bot:nth-child(3) {
+    position: absolute;
+    top: 33px;
+    right: -21px;
+}
+
+.about-decor-bot:nth-child(4) {
+    position: absolute;
+    top: 286px;
+    right: -33px;
+}
+
+.about-decor-bot:nth-child(5) {
+    position: absolute;
+    top: 336px;
+    right: 19px;
+}
+
+.about-decor-bot:nth-child(6) {
+    position: absolute;
+    top: 435px;
+    right: -23px;
+}
+
+.about-decor-bot:nth-child(7) {
+    position: absolute;
+    top: 442px;
+    right: -32px;
+}
+
+.about-decor-bot:nth-child(8) {
+    position: absolute;
+    top: 446px;
+    right: -42px;
+}
+
+/* content-bot */
+
+.about-desc-bot {
+    margin-top: 24px;
+    width: 511px;
+}
+
+/* media-bot */
+.about-list {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    column-gap: 56px;
+}
+
+.about-list::after,
+.about-item__active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #ff5b2e;
+    border-radius: 2px;
+    opacity: 0.07;
+}
+
+.about-item {
+    padding-bottom: 14px;
+}
+
+.about-item__active::after {
+    width: 95px;
+    opacity: 1;
+}
+
+.about-item-link {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.about-item__icon {
+    width: 24px;
+}
+
+.about-item__label {
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #48496a;
+    white-space: nowrap;
+}
+
+.about-info {
+    margin-top: 36px;
+}
+
+.about-info__desc {
+    width: 391px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+    color: #656689;
+}
+
+.about-info__link {
+    display: inline-block;
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #ff5d31;
+    text-decoration: underline;
+}
+.about-info + .about-info {
+    display: none;
 }
